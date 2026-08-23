@@ -2,7 +2,7 @@
 
 一个面向游戏 UI 美术的 Photoshop 切图插件。它可以把图层中互不连接的内容拆开、校对、打组并导出 PNG，同时支持选区、参考线、固定尺寸和偶数尺寸输出。
 
-> 当前版本：`v1.0.13` | 最低 Photoshop 版本：`24.4` | 已验证环境：Windows 11、Photoshop 27.8.0
+> 当前版本：`v1.0.14` | 最低 Photoshop 版本：`24.4` | 已验证环境：Windows 11、Photoshop 27.8.0
 
 ## 下载
 
@@ -16,11 +16,13 @@
 
 1. 先关闭正在进行的 Photoshop 模态操作，例如保存、导出或滤镜窗口。
 2. 双击下载的 `com.tu.ps-slicer_PS.ccx`。
-3. 在 Creative Cloud/Unified Plugin Installer 中确认安装。
+3. 在 Creative Cloud Desktop / Unified Plugin Installer 中确认第三方来源并安装。
 4. 安装完成后重启 Photoshop。
 5. 打开 `增效工具 > 切图工具`。
 
-升级时直接安装新版 CCX，然后重启 Photoshop 即可。
+升级时直接安装更高版本的 CCX，然后重启 Photoshop。若曾安装同版本号的内部测试包，请先卸载再安装最终包；Adobe 安装器可能不会完整覆盖同版本文件。
+
+终端用户不需要安装 Node.js 或 UXP 开发工具。插件是纯 UXP 实现，不包含原生二进制、本机固定路径、网络请求或私有凭据。当前仅完成 Windows 11 + Photoshop 27.8.0 实机验证；Photoshop 24.4 最低版本和 macOS 仍需对应环境的实机回归。
 
 ## 主界面
 
@@ -95,6 +97,8 @@
 - PNG 文件按稳定名称输出。
 - 重名文件可选择自动改名、跳过或覆盖。
 - 可生成 JSON 清单，记录结果尺寸、来源和最终文件哈希。
+- Windows 保留名、超长 UTF-8 名称、大小写和 Unicode 等价名称会经过跨平台安全处理。
+- PNG 与 JSON 清单使用同一冲突策略，默认不会覆盖已有文件。
 
 ## 常见问题
 
@@ -116,10 +120,10 @@
 
 ## 文件校验
 
-`v1.0.13` 安装包 SHA-256：
+`v1.0.14` 安装包 SHA-256：
 
 ```text
-D855DA1B4EC6C3C0D585772A114EE9D8FE05E0E1C0B698F8AF0C4673B593FA31
+BEBD59DB1C2D008545642FB50080CF01BB9546A452BC4AAC17072B4F7AE7E562
 ```
 
 ## 问题反馈
