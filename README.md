@@ -2,15 +2,17 @@
 
 一个面向游戏 UI 美术的 Photoshop 切图插件。它可以把图层中互不连接的内容拆开、校对、打组并导出 PNG，同时支持选区、参考线、固定尺寸和偶数尺寸输出。
 
-> 当前版本：`v1.0.15` | 最低 Photoshop 版本：`24.4` | 已验证环境：Windows 11、Photoshop 27.8.0
+> 当前候选版本：`v1.0.15` | 最低 Photoshop 版本：`24.4` | 已验证环境：Windows 11、Photoshop 27.8.0
 
 ## 下载
 
-前往 [Releases](https://github.com/Homer79980/ps-slicer-releases/releases/latest)，在 `Assets` 中下载：
+前往 [v1.0.15 预发布页](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.15)，在 `Assets` 中下载：
 
 `com.tu.ps-slicer_PS.ccx`
 
 不要下载 GitHub 自动生成的 `Source code` 压缩包；公开仓库不包含插件源码。
+
+v1.0.15 已通过 Adobe 官方校验、UPIA 安装、文件哈希和多尺寸界面渲染检查。由于最终验收时 Windows 处于锁屏状态，本版暂标记为预发布；Photoshop 宿主内最终视觉与点击复测完成后再提升为正式版。
 
 ## 安装
 
