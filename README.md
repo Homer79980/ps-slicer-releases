@@ -2,17 +2,17 @@
 
 面向游戏 UI 美术的 Photoshop UXP 切图工具。选中图层、选择拆分方式、分析并导出，适合图标、文字、长图和九宫格素材。
 
-> 当前版本：**v1.0.29**  |  最低 Photoshop：**24.4**  |  实机验证：**Windows 11 + Photoshop 27.8.0**
+> 当前版本：**v1.0.30**  |  最低 Photoshop：**24.4**  |  实机验证：**Windows 11 + Photoshop 27.8.0**
 
 ## 下载与仓库说明
 
 ### 普通用户：下载 CCX 安装包
 
-前往 [v1.0.29 Release](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.29)，在 **Assets** 中下载：
+前往 [v1.0.30 Release](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.30)，在 **Assets** 中下载：
 
 `com.tu.ps-slicer_PS.ccx`
 
-也可以直接下载：[com.tu.ps-slicer_PS.ccx](https://github.com/Homer79980/ps-slicer-releases/releases/download/v1.0.29/com.tu.ps-slicer_PS.ccx)
+也可以直接下载：[com.tu.ps-slicer_PS.ccx](https://github.com/Homer79980/ps-slicer-releases/releases/download/v1.0.30/com.tu.ps-slicer_PS.ccx)
 
 请不要下载 GitHub 自动生成的 `Source code` 压缩包。公开仓库不包含插件源码；CCX 只通过 Release 资产分发。
 
@@ -24,7 +24,7 @@
 4. 安装完成后重启 Photoshop。
 5. 在 Photoshop 菜单打开 **增效工具 > 切图工具**。
 
-v1.0.29 修复了部分 macOS Photoshop 环境中校对窗口缩略图显示为灰色占位块的问题，并保留 Windows 兼容路径。
+v1.0.30 使用插件内生成的透明 PNG 缩略图，避免把 Windows/macOS 宿主临时路径交给预览图片；同时把主面板的“分析”和“校对”合并为一次点击的“分析校对”。当透明 PNG 编码不可用时，仍保留 Photoshop ImageBlob 与宿主路径兼容回退。
 
 升级时直接安装更高版本 CCX 并重启 Photoshop。终端用户不需要 Node.js、UXP CLI 或其它开发工具。
 
@@ -43,7 +43,7 @@ v1.0.29 修复了部分 macOS Photoshop 环境中校对窗口缩略图显示为�
 3. 选择切图来源：按内容、按选区或按参考线。
 4. 选择智能拆分或严格拆分；智能拆分可调节智能强度。
 5. 按需开启固定尺寸、强制偶数尺寸，或勾选“合并选中图层后处理”。
-6. 点击 **分析**。结果有歧义时点击 **校对**，直接在预览网格中选择、合并、拆分或忽略结果，再点击 **应用结果**。
+6. 点击 **分析校对**，插件完成分析后直接打开校对窗口；直接点击 **切开** 或 **导出** 也会自动完成同一份分析。
 7. 选择导出目录，点击 **导出**；需要同时在 PSD 中建立结果组时，选择 **切开并导出**。
 
 ## 功能说明
@@ -133,10 +133,10 @@ GitHub 的普通仓库文件页不会为这类较大的 MP4 自动显示播放�
 
 ## 版本校验
 
-- 版本：`1.0.29`
-- CCX 大小：`67,989 bytes`
-- SHA-256：`EBD57DD67F8286519F6911DC4488492048558FF87D4B79CDB182CDF64206D649`
-- 自动化测试：`176/176` 通过
+- 版本：`1.0.30`
+- CCX 大小：`69,805 bytes`
+- SHA-256：`4E5F34A26A09816C51BF5B84902FBCFD644D57354815F36C32EE6264C3D64F26`
+- 自动化测试：`178/178` 通过
 - Adobe UXP CLI Manifest 校验：通过
 - Photoshop 27.8.0 加载验证：通过
 
