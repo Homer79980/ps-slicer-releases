@@ -2,17 +2,17 @@
 
 面向游戏 UI 美术的 Photoshop UXP 切图工具。选中图层、选择拆分方式、分析并导出，适合图标、文字、长图和九宫格素材。
 
-> 当前版本：**v1.0.30**  |  最低 Photoshop：**24.4**  |  实机验证：**Windows 11 + Photoshop 27.8.0**
+> 当前版本：**v1.0.31**  |  最低 Photoshop：**24.4**  |  实机验证：**Windows 11 + Photoshop 27.8.0**
 
 ## 下载与仓库说明
 
 ### 普通用户：下载 CCX 安装包
 
-前往 [v1.0.30 Release](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.30)，在 **Assets** 中下载：
+前往 [v1.0.31 Release](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.31)，在 **Assets** 中下载：
 
 `com.tu.ps-slicer_PS.ccx`
 
-也可以直接下载：[com.tu.ps-slicer_PS.ccx](https://github.com/Homer79980/ps-slicer-releases/releases/download/v1.0.30/com.tu.ps-slicer_PS.ccx)
+也可以直接下载：[com.tu.ps-slicer_PS.ccx](https://github.com/Homer79980/ps-slicer-releases/releases/download/v1.0.31/com.tu.ps-slicer_PS.ccx)
 
 请不要下载 GitHub 自动生成的 `Source code` 压缩包。公开仓库不包含插件源码；CCX 只通过 Release 资产分发。
 
@@ -24,7 +24,7 @@
 4. 安装完成后重启 Photoshop。
 5. 在 Photoshop 菜单打开 **增效工具 > 切图工具**。
 
-v1.0.30 使用插件内生成的透明 PNG 缩略图，避免把 Windows/macOS 宿主临时路径交给预览图片；同时把主面板的“分析”和“校对”合并为一次点击的“分析校对”。当透明 PNG 编码不可用时，仍保留 Photoshop ImageBlob 与宿主路径兼容回退。
+v1.0.31 优先使用 UXP 官方压缩 PNG ImageBlob 对象 URL，并把校对点击层改为透明非原生按钮，避免 Windows/macOS 宿主的按钮皮肤遮挡真实缩略图；PNG Data URL、Photoshop 编码和原始 ImageBlob 仍作为回退。
 
 升级时直接安装更高版本 CCX 并重启 Photoshop。终端用户不需要 Node.js、UXP CLI 或其它开发工具。
 
@@ -133,10 +133,10 @@ GitHub 的普通仓库文件页不会为这类较大的 MP4 自动显示播放�
 
 ## 版本校验
 
-- 版本：`1.0.30`
-- CCX 大小：`69,805 bytes`
-- SHA-256：`4E5F34A26A09816C51BF5B84902FBCFD644D57354815F36C32EE6264C3D64F26`
-- 自动化测试：`178/178` 通过
+- 版本：`1.0.31`
+- CCX 大小：`70,008 bytes`
+- SHA-256：`7CB7BB0716D10B2DAE5F0F40C7FD8A9DD4E145E4C8C2718247700475AE0D8EE3`
+- 自动化测试：`180/180` 通过
 - Adobe UXP CLI Manifest 校验：通过
 - Photoshop 27.8.0 加载验证：通过
 

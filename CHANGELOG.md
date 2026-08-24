@@ -1,5 +1,25 @@
 # 更新记录
 
+## v1.0.31 - 2026-08-24
+
+校对预览跨宿主渲染修复版本。
+
+- 校对缩略图优先编码为标准透明 PNG，并通过 UXP 官方 `ImageBlob(ArrayBuffer, { type: "image/png" })` 对象 URL 加载；不支持时回退 PNG Data URL、Photoshop 编码和原始 ImageBlob。
+- 预览点击层从原生 HTML `button` 改为透明 `div[role=button]`，避免 Windows/macOS UXP 原生按钮皮肤盖住图片。
+- 保留鼠标点击以及 Enter/Space 键盘选择，图片层与点击层继续独立，蓝色边界框位置不变。
+
+验证记录：
+
+- 自动化测试：180/180 通过。
+- 项目结构检查通过。
+- Adobe UXP CLI Manifest 校验与 CCX 打包通过（Photoshop 27.8.0）。
+
+安装包 SHA-256：
+
+```text
+7CB7BB0716D10B2DAE5F0F40C7FD8A9DD4E145E4C8C2718247700475AE0D8EE3
+```
+
 ## v1.0.30 - 2026-08-24
 
 跨宿主缩略图与分析校对流程修复版本。
