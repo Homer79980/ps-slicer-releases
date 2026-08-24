@@ -2,17 +2,17 @@
 
 面向游戏 UI 美术的 Photoshop UXP 切图工具。选中图层、选择拆分方式、分析并导出，适合图标、文字、长图和九宫格素材。
 
-> 当前版本：**v1.0.31**  |  最低 Photoshop：**24.4**  |  实机验证：**Windows 11 + Photoshop 27.8.0**
+> 当前版本：**v1.0.32**  |  最低 Photoshop：**24.4**  |  实机验证：**Windows 11 + Photoshop 27.8.0**
 
 ## 下载与仓库说明
 
 ### 普通用户：下载 CCX 安装包
 
-前往 [v1.0.31 Release](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.31)，在 **Assets** 中下载：
+前往 [v1.0.32 Release](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.32)，在 **Assets** 中下载：
 
 `com.tu.ps-slicer_PS.ccx`
 
-也可以直接下载：[com.tu.ps-slicer_PS.ccx](https://github.com/Homer79980/ps-slicer-releases/releases/download/v1.0.31/com.tu.ps-slicer_PS.ccx)
+也可以直接下载：[com.tu.ps-slicer_PS.ccx](https://github.com/Homer79980/ps-slicer-releases/releases/download/v1.0.32/com.tu.ps-slicer_PS.ccx)
 
 请不要下载 GitHub 自动生成的 `Source code` 压缩包。公开仓库不包含插件源码；CCX 只通过 Release 资产分发。
 
@@ -24,7 +24,7 @@
 4. 安装完成后重启 Photoshop。
 5. 在 Photoshop 菜单打开 **增效工具 > 切图工具**。
 
-v1.0.31 优先使用 UXP 官方压缩 PNG ImageBlob 对象 URL，并把校对点击层改为透明非原生按钮，避免 Windows/macOS 宿主的按钮皮肤遮挡真实缩略图；PNG Data URL、Photoshop 编码和原始 ImageBlob 仍作为回退。
+v1.0.32 优先使用已验证的 Photoshop 宿主 JPEG/base64，再依次回退 PNG Data URL、压缩 PNG ImageBlob 和原始 ImageBlob；校对点击层改为透明非原生按钮，避免 Windows/macOS 宿主的按钮皮肤遮挡真实缩略图。
 
 升级时直接安装更高版本 CCX 并重启 Photoshop。终端用户不需要 Node.js、UXP CLI 或其它开发工具。
 
