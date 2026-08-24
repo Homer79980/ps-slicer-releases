@@ -2,17 +2,17 @@
 
 面向游戏 UI 美术的 Photoshop UXP 切图工具。选中图层、选择拆分方式、分析并导出，适合图标、文字、长图和九宫格素材。
 
-> 当前版本：**v1.0.28**  |  最低 Photoshop：**24.4**  |  实机验证：**Windows 11 + Photoshop 27.8.0**
+> 当前版本：**v1.0.29**  |  最低 Photoshop：**24.4**  |  实机验证：**Windows 11 + Photoshop 27.8.0**
 
 ## 下载与仓库说明
 
 ### 普通用户：下载 CCX 安装包
 
-前往 [v1.0.28 Release](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.28)，在 **Assets** 中下载：
+前往 [v1.0.29 Release](https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.29)，在 **Assets** 中下载：
 
 `com.tu.ps-slicer_PS.ccx`
 
-也可以直接下载：[com.tu.ps-slicer_PS.ccx](https://github.com/Homer79980/ps-slicer-releases/releases/download/v1.0.28/com.tu.ps-slicer_PS.ccx)
+也可以直接下载：[com.tu.ps-slicer_PS.ccx](https://github.com/Homer79980/ps-slicer-releases/releases/download/v1.0.29/com.tu.ps-slicer_PS.ccx)
 
 请不要下载 GitHub 自动生成的 `Source code` 压缩包。公开仓库不包含插件源码；CCX 只通过 Release 资产分发。
 
@@ -23,6 +23,8 @@
 3. 双击 CCX，在 Creative Cloud Desktop / Unified Plugin Installer 中确认第三方插件安装。
 4. 安装完成后重启 Photoshop。
 5. 在 Photoshop 菜单打开 **增效工具 > 切图工具**。
+
+v1.0.29 修复了部分 macOS Photoshop 环境中校对窗口缩略图显示为灰色占位块的问题，并保留 Windows 兼容路径。
 
 升级时直接安装更高版本 CCX 并重启 Photoshop。终端用户不需要 Node.js、UXP CLI 或其它开发工具。
 
@@ -131,10 +133,10 @@ GitHub 的普通仓库文件页不会为这类较大的 MP4 自动显示播放�
 
 ## 版本校验
 
-- 版本：`1.0.28`
-- CCX 大小：`67,489 bytes`
-- SHA-256：`2A5327884411ABC36525FB44C810D43DF52545DA930082D61CE339303F0BA0B8`
-- 自动化测试：`174/174` 通过
+- 版本：`1.0.29`
+- CCX 大小：`67,989 bytes`
+- SHA-256：`EBD57DD67F8286519F6911DC4488492048558FF87D4B79CDB182CDF64206D649`
+- 自动化测试：`176/176` 通过
 - Adobe UXP CLI Manifest 校验：通过
 - Photoshop 27.8.0 加载验证：通过
 
