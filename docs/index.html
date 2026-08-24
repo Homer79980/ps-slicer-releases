@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PS 切图工具 - 视频演示</title>
+  <style>
+    :root { color-scheme: dark; --bg: #15171a; --panel: #202328; --line: #363b42; --text: #f4f6f8; --muted: #aeb6c1; --blue: #2997e6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+    main { width: min(1180px, calc(100% - 32px)); margin: 0 auto; padding: 42px 0 64px; }
+    h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: 0; }
+    .intro { margin: 0 0 28px; color: var(--muted); }
+    .intro a { color: #70c3ff; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+    article { overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); }
+    video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #090a0b; object-fit: contain; }
+    .copy { padding: 14px 16px 16px; }
+    h2 { margin: 0 0 5px; font-size: 17px; }
+    p { margin: 0; color: var(--muted); }
+    .download { display: inline-block; margin-top: 10px; color: #70c3ff; text-decoration: none; }
+    .download:hover { text-decoration: underline; }
+    @media (max-width: 560px) { main { width: min(100% - 20px, 1180px); padding-top: 26px; } h1 { font-size: 24px; } .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>PS 切图工具视频演示</h1>
+    <p class="intro">以下录屏展示选层、智能/严格拆分、校对、切开、固定尺寸和 PNG 导出的完整流程。视频来自 Photoshop 实机操作；需要安装插件请前往 <a href="https://github.com/Homer79980/ps-slicer-releases/releases/tag/v1.0.28">v1.0.28 Release</a>。</p>
+    <section class="grid" aria-label="视频列表">
+      <article><video controls preload="metadata" poster="images/workflow-analysis.jpg" src="videos/01-content-split-export.mp4"></video><div class="copy"><h2>01 内容拆分与导出</h2><p>按内容分析独立元素，并查看导出结果。</p><a class="download" href="videos/01-content-split-export.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" poster="images/workflow-review.jpg" src="videos/02-review-window.mp4"></video><div class="copy"><h2>02 校对窗口</h2><p>打开校对分割结果窗口，查看缩略图和结果操作。</p><a class="download" href="videos/02-review-window.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" src="videos/03-split-strategy.mp4"></video><div class="copy"><h2>03 拆分策略</h2><p>切换智能拆分与严格拆分并重新分析。</p><a class="download" href="videos/03-split-strategy.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" src="videos/04-result-preview.mp4"></video><div class="copy"><h2>04 结果预览</h2><p>在预览网格中查看多个分割结果。</p><a class="download" href="videos/04-result-preview.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" poster="images/workflow-export.jpg" src="videos/05-export-folder.mp4"></video><div class="copy"><h2>05 导出目录</h2><p>选择输出位置并查看生成的 PNG 文件。</p><a class="download" href="videos/05-export-folder.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" src="videos/06-output-options.mp4"></video><div class="copy"><h2>06 输出参数</h2><p>演示输出参数和处理流程。</p><a class="download" href="videos/06-output-options.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" src="videos/07-cut-operation.mp4"></video><div class="copy"><h2>07 切开操作</h2><p>只执行切开，在 PSD 中建立结果。</p><a class="download" href="videos/07-cut-operation.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" src="videos/08-multi-layer-processing.mp4"></video><div class="copy"><h2>08 多图层处理</h2><p>多图层选择与合并处理流程。</p><a class="download" href="videos/08-multi-layer-processing.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" src="videos/09-png-results.mp4"></video><div class="copy"><h2>09 PNG 导出结果</h2><p>在输出文件夹中查看拆分后的 PNG。</p><a class="download" href="videos/09-png-results.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" src="videos/10-single-layer-slice.mp4"></video><div class="copy"><h2>10 单图层切图</h2><p>单个图层的切图操作。</p><a class="download" href="videos/10-single-layer-slice.mp4">下载视频</a></div></article>
+      <article><video controls preload="metadata" src="videos/11-full-workflow.mp4"></video><div class="copy"><h2>11 完整回放</h2><p>从准备素材到完成导出的完整演示。</p><a class="download" href="videos/11-full-workflow.mp4">下载视频</a></div></article>
+    </section>
+  </main>
+</body>
+</html>

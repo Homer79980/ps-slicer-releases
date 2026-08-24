@@ -95,6 +95,8 @@
 
 **视频已上传到公开仓库：[打开 `docs/videos` 视频目录](docs/videos/)。**
 
+需要直接播放时，打开[视频播放页](https://homer79980.github.io/ps-slicer-releases/)。
+
 GitHub 的普通仓库文件页不会为这类较大的 MP4 自动显示播放器，打开某段视频后点击 **View raw** 或 **Download raw** 即可播放/下载。Release 页面只放 CCX 安装包，这是为了让下载入口保持干净。
 
 | 演示 | 内容 |
